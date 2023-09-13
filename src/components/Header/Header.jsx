@@ -74,10 +74,10 @@ class Header extends React.Component {
                 <div className="so-chunk">
                     <div className="Network_bar">
                         <span>
-                            Horizon url: <strong>{currentServerUrl}</strong>
+                            
                         </span>
                         <span>
-                            Network passphrase: <strong>{networkPassphrase}</strong>
+                            
                         </span>
                     </div>
                 </div>
