@@ -331,7 +331,7 @@ const BuyCrypto = ({ d }) => {
             })
             .catch(() => {
                 setIsAmountPending(false);
-                setInitError('An unknown error occurred due to which you cannot buy the crypto, try again in a moment');
+                setInitError('An unknown error occurred due to which you cannot buy the crypto from Moonpay try again in a moment, or buy AFRO from <href="https://zingypay.com/zingypay/payment-form" target="_blank" rel="noopener noreferrer"> Buy AFRO </a>');
             });
     };
 
