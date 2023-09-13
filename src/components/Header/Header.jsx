@@ -190,7 +190,7 @@ class Header extends React.Component {
                     <div className="so-chunk Header">
                         <nav className="Header_nav">
                             <Link className="Nav_logo" to={'/'}>
-                                Zingy Trader
+                                ZingyTrader
                             </Link>
                             {this.createHeaderTab('/markets/', 'Markets')}
                             {this.createHeaderTab('/exchange/', 'Exchange')}
