@@ -66,7 +66,26 @@ class Header extends React.Component {
         );
     }
 
-    
+    getNetworkBar() {
+        const { isDefault, currentServerUrl, networkPassphrase } = this.props.d.Server;
+
+        return !isDefault ? (
+            <div className="so-back Header_network">
+                <div className="so-chunk">
+                    <div className="Network_bar">
+                        <span>
+                            Horizon url: <strong>{currentServerUrl}</strong>
+                        </span>
+                        <span>
+                            Network passphrase: <strong>{networkPassphrase}</strong>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        ) : null;
+    }
+
+
     getAccountBlock() {
         const { state, account, userFederation, unfundedAccountId } = this.props.d.session;
         const hasMetadata = Boolean(this.props.d.walletConnectService.appMeta);
@@ -205,6 +224,8 @@ class Header extends React.Component {
         );
     }
 }
+
+
 
 Header.propTypes = {
     d: PropTypes.instanceOf(Driver).isRequired,
