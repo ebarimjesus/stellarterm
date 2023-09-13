@@ -1,6 +1,6 @@
 # ZingyTrader - open source client for Stellar Decentralized Exchange <zingypay.com>
 
-FEDERATION_SERVER="https://zingypay.com/federation/"
+FEDERATION_SERVER="https://wallet.zingypay.com/federation/"
 
 
 DESIRED_BASE_FEE=1000

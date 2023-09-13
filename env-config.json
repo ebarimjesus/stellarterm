@@ -19,7 +19,7 @@
         "DESTINATIONS_URL": "https://fed.stellarterm.com/destinations/",
         "API_URL": "https://api.stellarterm.com/v1/",
         "LOBSTR_VAULT_URL": "https://vault.lobstr.co/api/",
-        "FEDERATION_API_URL": "https://federation.zingypay.com/",
+        "FEDERATION_API_URL": "https://fed.stellarterm.com/",
         "HOME_URL": "https://zingytrader.zingypay.com/",
         "HOME_DOMAIN": "zingytrader.zingypay.com",
         "STELLAR_GUARD_URL": "https://stellarguard.me/api/",

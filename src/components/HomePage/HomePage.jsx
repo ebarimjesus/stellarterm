@@ -85,8 +85,8 @@ export default class HomePage extends React.Component {
                                         operating the Stellar network.
                                     </p>
                                     <p>
-                                        ZingyTrader is developed by Ultra Stellar, LLC, the same
-                                        company that developed the LOBSTR wallet. The project is
+                                        Zingy Trader is developed by Zingypay.com, LLC, the same
+                                        company that developed the Zingy Ai, Zingy Mart, Etc. The project is 
                                         independent of the Stellar Development Foundation.
                                     </p>
                                 </div>

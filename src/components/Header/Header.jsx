@@ -192,19 +192,28 @@ class Header extends React.Component {
                             <Link className="Nav_logo" to={'/'}>
                                 ZingyTrader
                             </Link>
+                            <div className="Header_link_container">
+                               <a
+                                    href="https://zingypay.com/zingypay/payment-form"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="Header_link"
+                                    style={{ marginRight: '5px' }}
+                               >
+                                   Buy AFRO
+                               </a>
+                               <img
+                                   src="https://res.cloudinary.com/dp7civtid/image/upload/v1694582789/mastercard-icon_nbzeds.png"
+                                   alt="MasterCard Icon"
+                                   style={{ maxWidth: '16px', maxHeight: '16px', verticalAlign: 'middle' }}
+                               />
+                            </div>
+
                             {this.createHeaderTab('/markets/', 'Markets')}
                             {this.createHeaderTab('/exchange/', 'Exchange')}
                             {this.createHeaderTab('/swap/', 'Swap')}
                             {this.getBuyCryptoLobsterLink()}
                             {this.createHeaderTab('/account/', 'Account')}
-                            <a
-                                className="Header_link"
-                                href="https://zingypay.com/payment-form"
-                                target="_blank" // Open in a new tab
-                                rel="noopener noreferrer" // Security best practice for target="_blank" links
-                            >
-                                Buy AFRO with Fiat
-                            </a>
                         </nav>
 
                         {accountBlock}
