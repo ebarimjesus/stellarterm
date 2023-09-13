@@ -32,7 +32,41 @@ class Header extends React.Component {
         this.unlisten();
     }
 
- 
+    getBuyCryptoLobsterLink() {
+        const buyCryptoUrl = '/buy-crypto';
+        const isTheSameTab = this.state.currentPath.includes(buyCryptoUrl);
+        const currentTabClass = isTheSameTab ? 'is-current' : '';
+
+        return (
+            <div className={`Nav_link buy_crypto ${currentTabClass}`}>
+                <span>Buy crypto </span>
+                <img src={images['icon-visa-mc']} alt="credit-card" className="cards_logo" />
+                <img src={images.dropdown} alt="" />
+                <div className="buy_crypto-links">
+                    <Link className="buy_crypto-link" to="/buy-crypto?code=xlm">
+                        Buy Stellar Lumens
+                    </Link>
+                    <Link className="buy_crypto-link" to="/buy-crypto?code=USDC_XLM">
+                        Buy USDC Coin (Stellar)
+                    </Link>
+                    <Link className="buy_crypto-link" to="/buy-crypto?code=btc">
+                        Buy Bitcoin
+                    </Link>
+                    <Link className="buy_crypto-link" to="/buy-crypto?code=eth">
+                        Buy Ethereum
+                    </Link>
+                    <Link className="buy_crypto-link" to="/buy-crypto?code=ltc">
+                        Buy Litecoin
+                    </Link>
+                    <Link className="buy_crypto-link" to="/buy-crypto">
+                        Buy other crypto
+                    </Link>
+                </div>
+            </div>
+        );
+    }
+
+    
     getAccountBlock() {
         const { state, account, userFederation, unfundedAccountId } = this.props.d.session;
         const hasMetadata = Boolean(this.props.d.walletConnectService.appMeta);
