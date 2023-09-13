@@ -152,7 +152,7 @@ export default class TrezorBody extends React.Component {
                         <div className="LoginPage__header">
                             <div className="LoginPage__header-wrap">
                                 <span className="LoginPage__title">Access your account</span>
-                                <span className="LoginPage__intro">Use Zingy Trader with your Trezor account</span>
+                                <span className="LoginPage__intro">Use ZingyTrader with your Trezor account</span>
                             </div>
                             <img src={images['trezor-full']} alt="trezor" width="133" />
                         </div>

@@ -79,14 +79,14 @@ export default class HomePage extends React.Component {
                             <div className="island__sub__division">
                                 <div className="HomePage__sideBlurb">
                                     <p>
-                                        Zingy Trader is just a client that can be used to
+                                        ZingyTrader is just a client that can be used to
                                         access the Stellar Decentralized Exchange. Neither
-                                        Zingy Trader nor the developers of it are involved with
+                                        ZingyTrader nor the developers of it are involved with
                                         operating the Stellar network.
                                     </p>
                                     <p>
                                         Zingy Trader is developed by Zingypay.com, LLC, the same
-                                        company that developed the Zingy Ai, Zingy Mart, Etc. The project is
+                                        company that developed the Zingy Ai, Zingy Mart, Etc. The project is 
                                         independent of the Stellar Development Foundation.
                                     </p>
                                 </div>

@@ -38,7 +38,7 @@ export default class LedgerAlert extends React.Component {
                                 <br />
                                 Please use{' '}
                                 <a href="https://zingypay.com/" target="_blank" rel="nofollow noopener noreferrer">
-                                    https://wallet.zingypay.com/
+                                    https://zingytrader.zingypay.com/
                                 </a>
                             </span>
                         }
