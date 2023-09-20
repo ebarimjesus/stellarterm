@@ -89,8 +89,7 @@ export default class HomePage extends React.Component {
         {/* Announcement */}
         <div className="announcement">
           <p>
-            Afro Smartchain will be launching on the 1st of January, 2024.
-            Get ready for an exciting journey!
+            
           </p>
         </div>
 
@@ -104,6 +103,8 @@ export default class HomePage extends React.Component {
               </h2>
 
               <p className="HomePage__lead__summary">
+                Afro Smartchain will be launching on the 1st of January, 2024.
+                Get ready for an exciting journey!
                 ZingyTrader is an <a href="https://github.com/zingypay/stellarterm" target="_blank" rel="nofollow noopener noreferrer">
                 open source</a> client for the <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                 Stellar network</a>.
