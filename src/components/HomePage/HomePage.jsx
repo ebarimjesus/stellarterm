@@ -86,6 +86,14 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
+        {/* Announcement */}
+        <div className="announcement">
+          <p>
+            Afro Smartchain will be launching on the 1st of January, 2024.
+            Get ready for an exciting journey!
+          </p>
+        </div>
+
 
         <div className="HomePage__black">
           <div className="so-back">
