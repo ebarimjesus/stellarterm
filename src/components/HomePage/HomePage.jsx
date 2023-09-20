@@ -91,8 +91,7 @@ export default class HomePage extends React.Component {
           <p>
             
           </p>
-        </div>
-
+        </div>  
 
         <div className="HomePage__black">
           <div className="so-back">
