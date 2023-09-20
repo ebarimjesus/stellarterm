@@ -110,3 +110,15 @@
     margin: 0 auto;
     text-align: left;
 }
+
+.token-cards-container {
+    display: flex; /* Display cards in a row */
+    justify-content: space-between; /* Add space between cards */
+  }
+  
+  .token-card {
+    margin: 10px; /* Adjust the margin to control the spacing */
+    text-align: center; /* Center align the card content */
+    padding: 10
+  }
+
