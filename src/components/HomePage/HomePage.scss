@@ -112,13 +112,15 @@
 }
 
 .token-cards-container {
+    background: #99990b;
     display: flex; /* Display cards in a row */
     justify-content: space-between; /* Add space between cards */
+    margin-top: 30px
   }
   
   .token-card {
-    margin: 10px; /* Adjust the margin to control the spacing */
+    margin: 20px; /* Adjust the margin to control the spacing */
     text-align: center; /* Center align the card content */
-    padding: 10
+    padding: 15px
   }
 

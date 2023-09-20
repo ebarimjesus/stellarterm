@@ -66,7 +66,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="200" height="200" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="230" height="230" />
         </a>
         <p>{`Buy ${token.name}`}</p>
       </div>
@@ -110,7 +110,7 @@ export default class HomePage extends React.Component {
 
         <div className="so-back islandBack HomePage__assetList">
           <div className="island">
-            <AssetList d={this.props.driver} limit={10} />
+            <AssetList d={this.props.driver} limit={30} />
             <Link to="/markets/" className="AssetListFooterAsLink">
               View more assets on the Markets page
               <img src={images['icon-arrow-right-green']} alt="" />
