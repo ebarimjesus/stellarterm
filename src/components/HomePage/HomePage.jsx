@@ -139,7 +139,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="185" height="185" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="190" height="190" />
         </a>
         <p>{`Buy ${token.name}`}</p>
         <p>{token.description}</p> {/* Render the description */}
