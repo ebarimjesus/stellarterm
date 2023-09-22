@@ -125,3 +125,38 @@
     padding: 10px
   }
 
+  .bank-transfer-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .bank-transfer-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .bank-transfer-card h4 {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .bank-transfer-card p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .bank-transfer-card a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+  
+  .bank-transfer-card a:hover {
+    text-decoration: none;
+  }
+
+    

@@ -10,25 +10,31 @@ import images from '../../images';
 const tokenData = [
   {
     name: 'AFRO',
+    description: 'One Africa Currency',
     imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1692079822/AFRO_TOKEN_ndqlai.png', // Replace with the actual image source
     url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
   },
   {
     name: 'LIFE',
+    description: 'Life Support Token',
     imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1691841326/life-800x600_m22ylm.png', // Replace with the actual image source
     url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
   },
   {
     name: 'NATURE',
+    description: 'Replenish The Earth',
     imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1690650612/nature_pzqdla.png', // Replace with the actual image source
     url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
   },
   {
     name: 'OSO',
+    description: 'Osomba Token',
     imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1695206993/oso_nwnm4h.png', // Replace with the actual image source
     url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
   },
 ];
+
+
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -62,6 +68,66 @@ export default class HomePage extends React.Component {
     );
   }
 
+  renderBankTransferCard() {
+    return (
+      <div className="bank-transfer-card">
+        <h3>Bank Transfer</h3>
+        <p>
+          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
+        </p>
+
+        <h4>Pay Online</h4>
+        <p>https://paystack.com/pay/zingypay</p>
+
+        <h4>Account 01 Details</h4>
+        <p>
+          Bank Name: Moniepoint MfB
+          <br />
+          Account Name: ZINGYPAY.COM
+          <br />
+          Account Number: 6349360169
+        </p>
+
+        <h4>Team Lead Account Details</h4>
+        <p>
+          Bank Name: Zenith Bank Plc
+          <br />
+          Account Name: Fortune Ebarim
+          <br />
+          Account Number: 2123861212
+        </p>
+
+        <h4>Account 03 Details</h4>
+        <p>
+          Bank Name: Wema Bank PLC
+          <br />
+          Account Name: CHEAPBUY MARKETPLACE FLWFLW
+          <br />
+          Account Number: 7812154849
+        </p>
+
+        <h4>Payment Details</h4>
+        <p>
+          Reference: Payment for AFRO
+          <br />
+          Amount: ₦10,000.00 for 5,000 tokens
+          <br />
+          Amount: ₦15,000.00 for 7,600 tokens
+          <br />
+          Amount: ₦20,000.00 for 9,800 tokens
+          <br />
+          Amount: ₦25,000.00 for 12,900 tokens
+          <br />
+          Amount: ₦30,000.00 for 20,000 tokens
+        </p>
+
+        <p>
+          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.
+        </p>
+      </div>
+    );
+  }
+
   renderTokenCards() {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
@@ -69,6 +135,7 @@ export default class HomePage extends React.Component {
           <img src={token.imageSrc} alt={`${token.name} Token`} width="230" height="230" />
         </a>
         <p>{`Buy ${token.name}`}</p>
+        <p>{token.description}</p> {/* Render the description */}
       </div>
     ));
   }
@@ -91,7 +158,29 @@ export default class HomePage extends React.Component {
           <p>
             
           </p>
-        </div>  
+        </div>
+
+         {/* Bank Transfer Card */}
+        <div className="so-back islandBack">
+          <div className="island">
+            <div className="island__sub">
+              {this.renderBankTransferCard()}
+            </div>
+          </div>
+        </div>
+
+        {/* Embed the external webpage */}
+        <div className="external-iframe">
+          <iframe
+            src="https://zingypay.com/zingypay/payment-form"
+            width="100%"
+            height="500px" /* Set the desired height */
+            frameborder="0"
+            style={{ overflow: 'auto' }} /* Control scrolling with CSS */
+          >
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+        </div>
 
         <div className="HomePage__black">
           <div className="so-back">
@@ -118,7 +207,7 @@ export default class HomePage extends React.Component {
 
         <div className="so-back islandBack HomePage__assetList">
           <div className="island">
-            <AssetList d={this.props.driver} limit={30} />
+            <AssetList d={this.props.driver} limit={10} />
             <Link to="/markets/" className="AssetListFooterAsLink">
               View more assets on the Markets page
               <img src={images['icon-arrow-right-green']} alt="" />
