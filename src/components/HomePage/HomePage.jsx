@@ -160,7 +160,8 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
-        <div className="video-embed">
+        {/* Embedded Video Card */}
+        <div className="video-card">
           <iframe
             width="640"
             height="360"
@@ -187,7 +188,7 @@ export default class HomePage extends React.Component {
         </div>
 
         {/* Embed the external webpage */}
-        <div className="external-iframe">
+        <div className="payment-card">
           <iframe
             src="https://zingypay.com/zingypay/payment-form"
             width="100%"
