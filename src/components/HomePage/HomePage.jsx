@@ -77,8 +77,15 @@ export default class HomePage extends React.Component {
         </p>
 
         <h4>Pay Online</h4>
-        <p>https://paystack.com/pay/zingypay</p>
-
+        <a
+          href="https://paystack.com/pay/zingypay"
+          className="pay-online-button"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Pay Online
+        </a>
+        
         <h4>Account 01 Details</h4>
         <p>
           Bank Name: Moniepoint MfB
@@ -151,6 +158,16 @@ export default class HomePage extends React.Component {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="video-embed">
+          <iframe
+            width="640"
+            height="360"
+            src="https://www.loom.com/embed/VIDEO_ID"
+            frameborder="0"
+            allowfullscreen
+          ></iframe>
         </div>
 
         {/* Announcement */}

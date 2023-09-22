@@ -159,4 +159,25 @@
     text-decoration: none;
   }
 
+  .pay-online-button {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-online-button:hover {
+    background-color: #0056b3; /* Hover background color */
+  }
+  
+  /* Optional: Center the button horizontally */
+  .pay-online-button {
+    text-align: center;
+    margin: 0 auto;
+  }
+
     
