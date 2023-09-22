@@ -74,7 +74,28 @@ export default class HomePage extends React.Component {
         <h1>Limited Time Offer For 1,000 People.</h1>
         
         <p>
-          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. We'll help you to sell 1,000 tokens and pay you in cash value within two weeks, 1st - 14th October, 2023 as compensation for your loyalty to the Afro race. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
+          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st of January.
+          <br /><br />
+          <strong>Investment Opportunity:</strong> As a special offer, your investment will be returned to you double on the 31st of October, 2023. This doubling of your investment isn't from another Ponzi scheme but from our apps' user subscription fees, especially our phenomenal TalkGPT—the AI assistant that functions like ChatGPT but with speech synthesis, Afro Mart, sales from cryptocurrencies, and more; as compensation for your loyalty to the Afro race.
+          <br /><br />
+          You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
+          </p>
+
+        <h4>Payment Details</h4>
+        <p>
+          Reference: Payment for AFRO
+          <br />
+          Amount: ₦10,000.00 for ₦20,000.00 or 5,000 AFRO tokens
+          <br />
+          Amount: ₦15,000.00 for ₦30,000.00 or 7,000 tokens
+          <br />
+          Amount: ₦20,000.00 for ₦40,000.00 or 10,000 tokens
+          <br />
+          Amount: ₦25,000.00 for ₦50,000.00 or 12,500 tokens
+          <br />
+          Amount: ₦30,000.00 for ₦60,000.00 or 15,000 tokens
+          <br />
+          Chat with us using the widget or call +2349058528334 if you intend to invest more than ₦30,000.00
         </p>
         <h3>Buy From Developer's Faucet.</h3>
         <p>Get AFRO at subsidized rates if you'll be among the first 1,000 people to make payments via the following details.</p>
@@ -106,21 +127,6 @@ export default class HomePage extends React.Component {
           Account Number: 7812154849
         </p>
 
-        <h4>Payment Details</h4>
-        <p>
-          Reference: Payment for AFRO
-          <br />
-          Amount: ₦10,000.00 for 5,000 tokens
-          <br />
-          Amount: ₦15,000.00 for 7,600 tokens
-          <br />
-          Amount: ₦20,000.00 for 9,800 tokens
-          <br />
-          Amount: ₦25,000.00 for 12,900 tokens
-          <br />
-          Amount: ₦30,000.00 for 20,000 tokens
-        </p>
-
         <p>
           After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.
         </p>
@@ -132,7 +138,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="195" height="195" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="198" height="198" />
         </a>
         <p>{`Buy ${token.name}`}</p>
         <p>{token.description}</p> {/* Render the description */}
@@ -153,12 +159,12 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
-        {/* Embedded Video Card */}
+        {/* Embedded YouTube Video */}
         <div className="video-card">
           <iframe
             width="640"
             height="360"
-            src="https://www.loom.com/embed/VIDEO_ID"
+            src="https://www.youtube.com/embed/Xq5dGBvOB6g"
             frameborder="0"
             allowfullscreen
           ></iframe>
