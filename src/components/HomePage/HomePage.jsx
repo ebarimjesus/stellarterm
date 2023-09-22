@@ -71,12 +71,14 @@ export default class HomePage extends React.Component {
   renderBankTransferCard() {
     return (
       <div className="bank-transfer-card">
-        <h3>Bank Transfer</h3>
+        <h1>Limited Time Offer For 1,000 People.</h1>
+        
         <p>
-          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
+          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. We'll help you to sell 1,000 tokens and pay you in cash value within two weeks as compensation for your loyalty to the Afro race. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
         </p>
-
-        <h4>Pay Online</h4>
+        <h3>Buy From Developer's Faucet.</h3>
+        <p>Get AFRO at subsidized rates if you'll be among the first 1,000 people to make payments via the following details.</p>
+        <h5>Pay Online</h5>
         <a
           href="https://paystack.com/pay/zingypay"
           className="pay-online-button"
@@ -95,16 +97,7 @@ export default class HomePage extends React.Component {
           Account Number: 6349360169
         </p>
 
-        <h4>Team Lead Account Details</h4>
-        <p>
-          Bank Name: Zenith Bank Plc
-          <br />
-          Account Name: Fortune Ebarim
-          <br />
-          Account Number: 2123861212
-        </p>
-
-        <h4>Account 03 Details</h4>
+        <h4>Account 02 Details</h4>
         <p>
           Bank Name: Wema Bank PLC
           <br />
@@ -139,7 +132,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="190" height="190" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="195" height="195" />
         </a>
         <p>{`Buy ${token.name}`}</p>
         <p>{token.description}</p> {/* Render the description */}
