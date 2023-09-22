@@ -187,19 +187,6 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
-        {/* Embed the external webpage */}
-        <div className="payment-card">
-          <iframe
-            src="https://zingypay.com/zingypay/payment-form"
-            width="100%"
-            height="500px" /* Set the desired height */
-            frameborder="0"
-            style={{ overflow: 'auto' }} /* Control scrolling with CSS */
-          >
-            <p>Your browser does not support iframes.</p>
-          </iframe>
-        </div>
-
         <div className="HomePage__black">
           <div className="so-back">
             <div className="HomePage__lead">
