@@ -85,7 +85,7 @@ export default class HomePage extends React.Component {
         >
           Pay Online
         </a>
-        
+
         <h4>Account 01 Details</h4>
         <p>
           Bank Name: Moniepoint MfB
@@ -139,7 +139,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="230" height="230" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="150" height="150" />
         </a>
         <p>{`Buy ${token.name}`}</p>
         <p>{token.description}</p> {/* Render the description */}
