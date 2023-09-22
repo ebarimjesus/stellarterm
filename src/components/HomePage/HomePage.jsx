@@ -74,11 +74,11 @@ export default class HomePage extends React.Component {
         <h1>Limited Time Offer For 1,000 People.</h1>
         
         <p>
-          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. We'll help you to sell 1,000 tokens and pay you in cash value within two weeks as compensation for your loyalty to the Afro race. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
+          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st 0f January, 2024. We'll help you to sell 1,000 tokens and pay you in cash value within two weeks, 1st - 14th October, 2023 as compensation for your loyalty to the Afro race. You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:
         </p>
         <h3>Buy From Developer's Faucet.</h3>
         <p>Get AFRO at subsidized rates if you'll be among the first 1,000 people to make payments via the following details.</p>
-        <h5>Pay Online</h5>
+        <h4>Pay Online</h4>
         <a
           href="https://paystack.com/pay/zingypay"
           className="pay-online-button"
