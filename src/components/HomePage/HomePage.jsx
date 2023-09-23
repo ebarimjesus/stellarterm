@@ -77,35 +77,29 @@ export default class HomePage extends React.Component {
   renderBankTransferCard() {
     return (
       <div className="bank-transfer-card">
-        <h1>Limited Time Offer For 1,000 People.</h1>
+        <h1>Limited Time Offer.</h1>
         
         <p>
-          We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st of January.
+          Invest wisely!
           <br /><br />
-          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment in the US Cannabis industry. Another company is launching a Cannabis sauce company. Invest today.
+          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment in the global Cannabis industry. Another company is launching a Cannabis sauce production in the USA. Invest today.
           <br /><br />
           You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
           </p>
         
           <h3>Double or Tripple your Money within Time.</h3>
         <h4>Payment Details</h4>
-        <p>Invest to earn 30% within 30 days, or 100% within 90 days, or 200% within 150 days, or 300% within 180 days.</p>
+        <p>Invest to earn 40% within 30 days, or 100% within 60 days, or 200% within 150 days, or 300% within 180 days.</p>
         <p>
           Reference: Payment for CNB
           <br />
-          Amount: ₦10,000.00 for ₦20,000.00/90days, or   ₦13,000.00/30days.
+          Duration: 30 days = 40%.
           <br />
-          Amount: ₦15,000.00 for ₦30,000.00/90days, or  ₦19,500.00/30days.
+          Duration: 60 days = 100%. 
           <br />
-          Amount: ₦20,000.00 for ₦40,000.00/90days, or  ₦26,000.00/30days.
-          <br />
-          Amount: ₦25,000.00 for ₦50,000.00/90days, or  ₦30,000.00/30days.
-          <br />
-          Amount: ₦30,000.00 for ₦60,000.00/90days or ₦9,000.00/30days. 
-          <br />
-          Chat with us using the widget if you intend to invest more than ₦30,000.00
+          Chat with us using the widget if you intend to invest more than ₦500,000.00
         </p>
-        <p>Invest at least ₦5,000.00 to get ₦7,500.00 within 30 days, or ₦10,000.00 within 90 days if you're one of the persons who will like to invest in the US Cannabis Supply Chain; make payments via the following details.</p>
+        <p>Invest at least ₦5,000.00 to get ₦7,000.00 within 30 days, or ₦10,000.00 within 60 days if you're one of the persons who will like to invest in the US Cannabis Supply Chain; make payments via the following details.</p>
         <h4>Pay Online</h4>
         <a
           href="https://paystack.com/pay/zingypay"
