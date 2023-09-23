@@ -15,6 +15,12 @@ const tokenData = [
     url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
   },
   {
+    name: 'ÇNB',
+    description: 'Çannabis',
+    imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1695474886/CNB_bvlwjy.png', // Replace with the actual image source
+    url: 'https://zingypay.com/zingypay/payment-form/', // Replace with the actual URL
+  },
+  {
     name: 'LIFE',
     description: 'Life Support Token',
     imageSrc: 'https://res.cloudinary.com/dp7civtid/image/upload/v1691841326/life-800x600_m22ylm.png', // Replace with the actual image source
@@ -139,7 +145,7 @@ export default class HomePage extends React.Component {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
         <a href={token.url} target="_blank" rel="noopener noreferrer">
-          <img src={token.imageSrc} alt={`${token.name} Token`} width="198" height="198" />
+          <img src={token.imageSrc} alt={`${token.name} Token`} width="150" height="150" />
         </a>
         <p>{`Buy ${token.name}`}</p>
         <p>{token.description}</p> {/* Render the description */}
