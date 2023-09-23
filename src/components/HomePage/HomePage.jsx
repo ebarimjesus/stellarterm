@@ -76,7 +76,7 @@ export default class HomePage extends React.Component {
         <p>
           We're raising funds to develop and launch the mobile versions of our apps, and to facilitate the eventful launch of the Afro Smartchain on the 1st of January.
           <br /><br />
-          <strong>Investment Opportunity:</strong> As a special offer, your investment will be returned to you double on the 31st of October, 2023. This doubling of your investment isn't from another Ponzi scheme but from our apps' user subscription fees, especially our phenomenal TalkGPT—the AI assistant that functions like ChatGPT but with speech synthesis, Afro Mart, sales from cryptocurrencies, and more; as compensation for your loyalty to the Afro race.
+          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment in the US Cannabis industry. Another company is launching a Cannabis sauce company. Invest today.
           <br /><br />
           You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
           </p>
