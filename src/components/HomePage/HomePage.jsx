@@ -80,25 +80,26 @@ export default class HomePage extends React.Component {
           <br /><br />
           You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
           </p>
-
+        
+          <h3>Double or Tripple your Money within Time.</h3>
         <h4>Payment Details</h4>
+        <p>Invest to earn 30% within 30 days, or 100% within 90 days, or 200% within 150 days, or 300% within 180 days.</p>
         <p>
-          Reference: Payment for AFRO
+          Reference: Payment for CNB
           <br />
-          Amount: ₦10,000.00 for ₦20,000.00 or 5,000 AFRO tokens
+          Amount: ₦10,000.00 for ₦20,000.00/90days, or   ₦13,000.00/30days.
           <br />
-          Amount: ₦15,000.00 for ₦30,000.00 or 7,000 tokens
+          Amount: ₦15,000.00 for ₦30,000.00/90days, or  ₦19,500.00/30days.
           <br />
-          Amount: ₦20,000.00 for ₦40,000.00 or 10,000 tokens
+          Amount: ₦20,000.00 for ₦40,000.00/90days, or  ₦26,000.00/30days.
           <br />
-          Amount: ₦25,000.00 for ₦50,000.00 or 12,500 tokens
+          Amount: ₦25,000.00 for ₦50,000.00/90days, or  ₦30,000.00/30days.
           <br />
-          Amount: ₦30,000.00 for ₦60,000.00 or 15,000 tokens
+          Amount: ₦30,000.00 for ₦60,000.00/90days or ₦9,000.00/30days. 
           <br />
-          Chat with us using the widget or call +2349058528334 if you intend to invest more than ₦30,000.00
+          Chat with us using the widget if you intend to invest more than ₦30,000.00
         </p>
-        <h3>Buy From Developer's Faucet.</h3>
-        <p>Get AFRO at subsidized rates if you'll be among the first 1,000 people to make payments via the following details.</p>
+        <p>Invest at least ₦5,000.00 to get ₦7,500.00 within 30 days, or ₦10,000.00 within 90 days if you're one of the persons who will like to invest in the US Cannabis Supply Chain; make payments via the following details.</p>
         <h4>Pay Online</h4>
         <a
           href="https://paystack.com/pay/zingypay"
@@ -128,7 +129,7 @@ export default class HomePage extends React.Component {
         </p>
 
         <p>
-          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.
+          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase.
         </p>
       </div>
     );
