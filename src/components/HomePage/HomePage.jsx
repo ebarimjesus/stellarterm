@@ -172,7 +172,7 @@ export default class HomePage extends React.Component {
         </div>
 
          {/* ChangeNow Widget */}
-      <div className="exchange-widget">
+      <div className="exchange-card">
         <iframe
           id="iframe-widget"
           src="https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=10&amountFiat=4130&backgroundColor=000000&darkMode=false&from=xlm&fromFiat=ngn&horizontal=false&isFiat&lang=en-US&link_id=c295ec93321c67&locales=true&logo=false&primaryColor=2ecc10&to=usdcxlm&toFiat=xlm&toTheMoon=true"
