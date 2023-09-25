@@ -181,6 +181,16 @@ export default class HomePage extends React.Component {
         <script defer type="text/javascript" src="https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js"></script>
       </div>
 
+      {/* ChangeNow Widget 2 */}
+      <div className="exchange-card">
+        <iframe
+          id="iframe-widget"
+          src="https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat=1500&backgroundColor=2B2B35&darkMode=true&from=btc&fromFiat=eur&horizontal=false&isFiat&lang=en-US&link_id=c295ec93321c67&locales=true&logo=false&primaryColor=07482b&to=xlm&toFiat=eth&toTheMoon=true&topUpAddress=GAZ237H33DS6AMCZMPP76DQ3W5WGUVWWBQYLKSO26YFI5JQJOKXEJW2M&topUpCurrency=xlm&topUpExtraId&topUpMode=true&topUpNetwork=xlm"
+          style={{ height: '356px', width: '100%', border: 'none' }}
+        ></iframe>
+        <script defer type="text/javascript" src="https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js"></script>
+      </div>
+
         {/* Announcement */}
         <div className="announcement">
           <p>
