@@ -89,17 +89,17 @@ export default class HomePage extends React.Component {
         
           <h3>Double or Tripple your Money within Time.</h3>
         <h4>Payment Details</h4>
-        <p>Invest to earn 40% within 30 days, or 100% within 60 days, or 200% within 150 days, or 300% within 180 days.</p>
+        <p>Invest to earn 100% within 30 days, or 100% within 60 days, or 200% within 150 days, or 300% within 180 days.</p>
         <p>
           Reference: Payment for CNB
           <br />
-          Duration: 30 days = 40%.
+          Duration: ÇNB - 30 days = 100%.
           <br />
-          Duration: 60 days = 100%. 
+          Duration:  AFRO - 60 days = 100%. 
           <br />
           Chat with us using the widget if you intend to invest more than ₦500,000.00
         </p>
-        <p>Invest at least ₦5,000.00 to get ₦7,000.00 within 30 days, or ₦10,000.00 within 60 days if you're one of the persons who will like to invest in the US Cannabis Supply Chain; make payments via the following details.</p>
+        <p>Invest at least ₦10,000.00 in ÇNB to get ₦20,000.00 within 30 days if you're one of the persons who will like to invest in the Cannabis Supply Chain; or ₦10,000.00 in AFRO to get ₦20,000.00 within 60 days. Make payments via the following details.</p>
         <h4>Pay Online</h4>
         <a
           href="https://paystack.com/pay/zingypay"
@@ -129,7 +129,7 @@ export default class HomePage extends React.Component {
         </p>
 
         <p>
-          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase.
+          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase or any other transaction.
         </p>
       </div>
     );
@@ -170,26 +170,6 @@ export default class HomePage extends React.Component {
             allowfullscreen
           ></iframe>
         </div>
-
-         {/* ChangeNow Widget */}
-      <div className="exchange-card">
-        <iframe
-          id="iframe-widget"
-          src="https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=10&amountFiat=4130&backgroundColor=000000&darkMode=false&from=xlm&fromFiat=ngn&horizontal=false&isFiat&lang=en-US&link_id=c295ec93321c67&locales=true&logo=false&primaryColor=2ecc10&to=usdcxlm&toFiat=xlm&toTheMoon=true"
-          style={{ height: '356px', width: '100%', border: 'none' }}
-        ></iframe>
-        <script defer type="text/javascript" src="https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js"></script>
-      </div>
-
-      {/* ChangeNow Widget 2 */}
-      <div className="exchange-card">
-        <iframe
-          id="iframe-widget"
-          src="https://changenow.io/embeds/exchange-widget/v2/widget.html?FAQ=true&amount=0.1&amountFiat=1500&backgroundColor=2B2B35&darkMode=true&from=btc&fromFiat=eur&horizontal=false&isFiat&lang=en-US&link_id=c295ec93321c67&locales=true&logo=false&primaryColor=07482b&to=xlm&toFiat=eth&toTheMoon=true&topUpAddress=GAZ237H33DS6AMCZMPP76DQ3W5WGUVWWBQYLKSO26YFI5JQJOKXEJW2M&topUpCurrency=xlm&topUpExtraId&topUpMode=true&topUpNetwork=xlm"
-          style={{ height: '356px', width: '100%', border: 'none' }}
-        ></iframe>
-        <script defer type="text/javascript" src="https://changenow.io/embeds/exchange-widget/v2/stepper-connector.js"></script>
-      </div>
 
         {/* Announcement */}
         <div className="announcement">
