@@ -82,24 +82,24 @@ export default class HomePage extends React.Component {
         <p>
           Invest wisely!
           <br /><br />
-          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment in the global Cannabis industry. Another company is launching a Cannabis sauce production in the USA. Invest today.
+          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment. Invest today.
           <br /><br />
           You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
           </p>
         
           <h3>Double or Tripple your Money within Time.</h3>
         <h4>Payment Details</h4>
-        <p>Invest to earn 100% within 30 days, or 100% within 60 days, or 200% within 150 days, or 300% within 180 days.</p>
+        <p>Invest to earn 200% within 90 days, or 400% within 360 days.</p>
         <p>
-          Reference: Payment for CNB
+          Reference: Payment for AFRO
           <br />
-          Duration: ÇNB - 30 days = 100%.
+          Duration: ÇNB - 90 days = 150%.
           <br />
-          Duration:  AFRO - 60 days = 100%. 
+          Duration:  AFRO - 360 days = 400%. 
           <br />
           Chat with us using the widget if you intend to invest more than ₦500,000.00
         </p>
-        <p>Invest at least ₦10,000.00 in ÇNB to get ₦20,000.00 within 30 days if you're one of the persons who will like to invest in the Cannabis Supply Chain; or ₦10,000.00 in AFRO to get ₦20,000.00 within 60 days. Make payments via the following details.</p>
+        <p> Make payments via the following details.</p>
         <h4>Pay Online</h4>
         <a
           href="https://paystack.com/pay/zingypay"

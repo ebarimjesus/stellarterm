@@ -14,7 +14,7 @@ QUOTE_SERVER = "https://zingytrader.zingypay.com/sep38"
 
 # Add support for CNB
 [[CURRENCIES]]
-code = "ÇNB"
+code = "CNB"
 issuer = "GAEESZVR52HUAHPOJZYWMWS7TYLSPS46IAK3ZDT7HTFBULDVOYUNEWCC"
 status = "live"
 is_asset_anchored = true
