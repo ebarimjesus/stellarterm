@@ -40,9 +40,9 @@ const tokenData = [
   },
 ];
 
-const PaymentComponent = () => {
+const BankTransferCard = () => {
   return (
-    <div className="payment-container">
+    <div className="bank-transfer-card">
       <h1 className="payment-heading">Special Offer: Discounted AFRO Tokens for First 1,000 People</h1>
       <p className="payment-text">As a token of appreciation for your support, we are offering a limited-time discount on AFRO Tokens! You can purchase AFRO Tokens at a reduced rate to enable us to finish the development of the Afro Smartchain and its eventful launch. Don't miss out on this exclusive opportunity to get involved in the AFRO Smartchain revolution at a discounted price.</p>
       <p className="payment-text">Stay tuned for updates when the Afro Smartchain launches on January 1st, 2024!</p>
@@ -66,15 +66,6 @@ const PaymentComponent = () => {
     </div>
   );
 };
-
-const BankTransferCard = () => {
-  return (
-    <div className="bank-transfer-card">
-      <PaymentComponent />
-    </div>
-  );
-};
-
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -108,19 +99,6 @@ export default class HomePage extends React.Component {
     );
   }
 
-  renderBankTransferCard() {
-    return (
-      <div className="so-back islandBack">
-        <div className="island">
-          <div className="island__sub">
-          <div className="bank-transfer-card">
-          {this.renderBankTransferCard()}
-          </div>
-          </div>
-        </div>
-      </div>
-    );
-  }
 
   renderTokenCards() {
     return tokenData.map((token, index) => (
@@ -146,6 +124,9 @@ export default class HomePage extends React.Component {
             </div>
           </div>
         </div>
+
+      {/* Render BankTransferCard component */}
+      <BankTransferCard />
 
   
 
