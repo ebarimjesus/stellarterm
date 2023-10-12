@@ -128,6 +128,9 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
+        {/* Payment Component */}
+        <PaymentComponent />
+
         {/* Embedded YouTube Video */}
         <div className="video-card">
           <iframe
