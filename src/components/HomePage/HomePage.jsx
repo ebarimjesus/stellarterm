@@ -108,6 +108,18 @@ export default class HomePage extends React.Component {
     );
   }
 
+  renderBankTransferCard() {
+    return (
+      <div className="so-back islandBack">
+        <div className="island">
+          <div className="island__sub">
+            <BankTransferCard />
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   renderTokenCards() {
     return tokenData.map((token, index) => (
       <div className="token-card" key={index}>
@@ -133,15 +145,7 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
-  {/* Bank Transfer Card */}
-  <div className="so-back islandBack">
-          <div className="island">
-            <div className="island__sub">
-              {this.renderBankTransferCard()}
-            </div>
-          </div>
-        </div>
-        
+  
 
         
         {/* Embedded YouTube Video */}
