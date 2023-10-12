@@ -133,11 +133,17 @@ export default class HomePage extends React.Component {
           </div>
         </div>
 
+  {/* Bank Transfer Card */}
+  <div className="so-back islandBack">
+          <div className="island">
+            <div className="island__sub">
+              {this.renderBankTransferCard()}
+            </div>
+          </div>
+        </div>
         
 
-        {/* Payment Component */}
-        {PaymentComponent()}
-
+        
         {/* Embedded YouTube Video */}
         <div className="video-card">
           <iframe
@@ -154,15 +160,6 @@ export default class HomePage extends React.Component {
           <p>
             
           </p>
-        </div>
-
-         {/* Bank Transfer Card */}
-        <div className="so-back islandBack">
-          <div className="island">
-            <div className="island__sub">
-              {this.renderBankTransferCard()}
-            </div>
-          </div>
         </div>
 
         <div className="HomePage__black">
