@@ -40,6 +40,35 @@ const tokenData = [
   },
 ];
 
+const PaymentComponent = () => {
+  return (
+    <div className="payment-container">
+      <h1 className="payment-heading">Special Offer: Discounted AFRO Tokens for First 1,000 People</h1>
+      <p className="payment-text">As a token of appreciation for your support, we are offering a limited-time discount on AFRO Tokens! You can purchase AFRO Tokens at a reduced rate to enable us to finish the development of the Afro Smartchain and its eventful launch. Don't miss out on this exclusive opportunity to get involved in the AFRO Smartchain revolution at a discounted price.</p>
+      <p className="payment-text">Stay tuned for updates when the Afro Smartchain launches on January 1st, 2024!</p>
+
+      <div className="bank-transfer-card"> {/* Add the bank-transfer-card id here */}
+        <h1 className="payment-heading">Bank Transfer</h1>
+        <p className="payment-text">You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:</p>
+
+        <h3>Account Details</h3>
+        <p className="payment-text">Bank Name: Moniepoint MfB</p>
+        <p className="payment-text">Account Name: ZINGYPAY.COM </p>
+        <p className="payment-text">Account Number: 6349360169 </p>
+
+        <h3>Payment Details</h3>
+        <p className="payment-text">Reference: Payment for AFRO</p>
+        <p className="payment-text">Amount: ₦10,000.00 for 3,000 tokens </p>
+        <p className="payment-text">Amount: ₦20,000.00 for 7,00 tokens </p>
+        <p className="payment-text">Amount: ₦50,000.00 for 15,000 tokens </p>
+        <p className="payment-text">Amount: ₦100,000.00 for 35,000 tokens </p>
+        <p className="payment-text">Amount: ₦1,000,000.00 for 400,000 tokens </p>
+        <p className="payment-text">After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.</p>
+      </div>
+    </div>
+  );
+};
+
 
 
 export default class HomePage extends React.Component {
@@ -73,35 +102,6 @@ export default class HomePage extends React.Component {
       </div>
     );
   }
-
-  const PaymentComponent = () => {
-    return (
-      <div className="payment-container">
-        <h1 className="payment-heading">Special Offer: Discounted AFRO Tokens for First 1,000 People</h1>
-        <p className="payment-text">As a token of appreciation for your support, we are offering a limited-time discount on AFRO Tokens! You can purchase AFRO Tokens at a reduced rate to enable us to finish the development of the Afro Smartchain and its eventful launch. Don't miss out on this exclusive opportunity to get involved in the AFRO Smartchain revolution at a discounted price.</p>
-        <p className="payment-text">Stay tuned for updates when the Afro Smartchain launches on January 1st, 2024!</p>
-  
-        <div className="bank-transfer-card"> {/* Add the bank-transfer-card id here */}
-          <h1 className="payment-heading">Bank Transfer</h1>
-          <p className="payment-text">You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:</p>
-  
-          <h3>Account Details</h3>
-          <p className="payment-text">Bank Name: Moniepoint MfB</p>
-          <p className="payment-text">Account Name: ZINGYPAY.COM </p>
-          <p className="payment-text">Account Number: 6349360169 </p>
-  
-          <h3>Payment Details</h3>
-          <p className="payment-text">Reference: Payment for AFRO</p>
-          <p className="payment-text">Amount: ₦10,000.00 for 3,000 tokens </p>
-          <p className="payment-text">Amount: ₦20,000.00 for 7,00 tokens </p>
-          <p className="payment-text">Amount: ₦50,000.00 for 15,000 tokens </p>
-          <p className="payment-text">Amount: ₦100,000.00 for 35,000 tokens </p>
-          <p className="payment-text">Amount: ₦1,000,000.00 for 400,000 tokens </p>
-          <p className="payment-text">After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.</p>
-        </div>
-      </div>
-    );
-  };
 
   renderTokenCards() {
     return tokenData.map((token, index) => (
