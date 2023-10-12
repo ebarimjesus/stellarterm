@@ -114,7 +114,7 @@ export default class HomePage extends React.Component {
         <div className="island">
           <div className="island__sub">
           <div className="bank-transfer-card">
-            <BankTransferCard />
+          {this.renderBankTransferCard()}
           </div>
           </div>
         </div>
