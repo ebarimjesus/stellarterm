@@ -74,66 +74,34 @@ export default class HomePage extends React.Component {
     );
   }
 
-  renderBankTransferCard() {
+  const PaymentComponent = () => {
     return (
-      <div className="bank-transfer-card">
-        <h1>Limited Time Offer.</h1>
-        
-        <p>
-          Invest wisely!
-          <br /><br />
-          <strong>Investment Opportunity:</strong> As a special offer, you can double or tripple your investment. Invest today.
-          <br /><br />
-          You can also test our app at <a href="https://test-app.zingypay.com" target="_blank" rel="noopener noreferrer">https://test-app.zingypay.com</a>.
-          </p>
-        
-          <h3>Double or Tripple your Money within Time.</h3>
-        <h4>Payment Details</h4>
-        <p>Invest to earn 200% within 90 days, or 400% within 360 days.</p>
-        <p>
-          Reference: Payment for AFRO
-          <br />
-          Duration: ÇNB - 90 days = 150%.
-          <br />
-          Duration:  AFRO - 360 days = 400%. 
-          <br />
-          Chat with us using the widget if you intend to invest more than ₦500,000.00
-        </p>
-        <p> Make payments via the following details.</p>
-        <h4>Pay Online</h4>
-        <a
-          href="https://paystack.com/pay/zingypay"
-          className="pay-online-button"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Pay Online
-        </a>
-
-        <h4>Account 01 Details</h4>
-        <p>
-          Bank Name: Moniepoint MfB
-          <br />
-          Account Name: ZINGYPAY.COM
-          <br />
-          Account Number: 6349360169
-        </p>
-
-        <h4>Account 02 Details</h4>
-        <p>
-          Bank Name: Wema Bank PLC
-          <br />
-          Account Name: CHEAPBUY MARKETPLACE FLWFLW
-          <br />
-          Account Number: 7812154849
-        </p>
-
-        <p>
-          After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase or any other transaction.
-        </p>
+      <div className="payment-container">
+        <h1 className="payment-heading">Special Offer: Discounted AFRO Tokens for First 1,000 People</h1>
+        <p className="payment-text">As a token of appreciation for your support, we are offering a limited-time discount on AFRO Tokens! You can purchase AFRO Tokens at a reduced rate to enable us to finish the development of the Afro Smartchain and its eventful launch. Don't miss out on this exclusive opportunity to get involved in the AFRO Smartchain revolution at a discounted price.</p>
+        <p className="payment-text">Stay tuned for updates when the Afro Smartchain launches on January 1st, 2024!</p>
+  
+        <div className="bank-transfer-card"> {/* Add the bank-transfer-card id here */}
+          <h1 className="payment-heading">Bank Transfer</h1>
+          <p className="payment-text">You can make a payment directly into our bank account for the purchase of AFRO Tokens from the developers' faucet at discounted rates. Please use the following bank details:</p>
+  
+          <h3>Account Details</h3>
+          <p className="payment-text">Bank Name: Moniepoint MfB</p>
+          <p className="payment-text">Account Name: ZINGYPAY.COM </p>
+          <p className="payment-text">Account Number: 6349360169 </p>
+  
+          <h3>Payment Details</h3>
+          <p className="payment-text">Reference: Payment for AFRO</p>
+          <p className="payment-text">Amount: ₦10,000.00 for 3,000 tokens </p>
+          <p className="payment-text">Amount: ₦20,000.00 for 7,00 tokens </p>
+          <p className="payment-text">Amount: ₦50,000.00 for 15,000 tokens </p>
+          <p className="payment-text">Amount: ₦100,000.00 for 35,000 tokens </p>
+          <p className="payment-text">Amount: ₦1,000,000.00 for 400,000 tokens </p>
+          <p className="payment-text">After making the payment, please use the chat widget at the bottom-right corner of the page, or send an email to admin@zingypay.com with proof of payment and your public key, and our team will process your AFRO Token purchase. You can as well call +2349058528334.</p>
+        </div>
       </div>
     );
-  }
+  };
 
   renderTokenCards() {
     return tokenData.map((token, index) => (
