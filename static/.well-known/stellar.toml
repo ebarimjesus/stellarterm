@@ -1,16 +1,27 @@
-# ZingyTrader - open source client for Stellar Decentralized Exchange <zingypay.com>
 
-ACCOUNTS = ["GAZ237H33DS6AMCZMPP76DQ3W5WGUVWWBQYLKSO26YFI5JQJOKXEJW2M"]
-SIGNING_KEY = "GAEESZVR52HUAHPOJZYWMWS7TYLSPS46IAK3ZDT7HTFBULDVOYUNEWCC"
+
+ACCOUNTS = ["GBZAC3UPMX3QI4346PRRNE77QORHFO2V4CVDICI6DUVJJSD3QHO7RFAF", "GD72XP6N3LQFP4C27GUDV22LBYASGACAIEME64IEGKNU2HGO6RIALLRR", "GBRTM5TWRKX2DCOH6OETIA45NJJXGVP6QB7JJ754QFAO62XG2XMCDBAA", "GCLCIGPIF52BY3ASVR4QBLCZ7BHDYZRTAT75UYPSR4EXTI5KLUXHS2YG", "GAZ237H33DS6AMCZMPP76DQ3W5WGUVWWBQYLKSO26YFI5JQJOKXEJW2M"]
+SIGNING_KEY = "GA2Y2JYKYM47JU5MRUUOIBRFJ56ENFASUTENKCFSYRLYASB4XIM7XHNM"
 FEDERATION_SERVER="https://federation.zingypay.com/federation"
 NETWORK_PASSPHRASE='Public Global Stellar Network ; September 2015'
 
-TRANSFER_SERVER_SEP0024 = "https://zingytrader.zingypay.com/sep24"
-WEB_AUTH_ENDPOINT = "https://zingytrader.zingypay.com/auth"
-DIRECT_PAYMENT_SERVER = "https://zingytrader.zingypay.com/sep31"
-KYC_SERVER = "https://zingytrader.zingypay.com/kyc"
-QUOTE_SERVER = "https://zingytrader.zingypay.com/sep38"
+TRANSFER_SERVER_SEP0024 = "https://zingypay.com/sep24"
+WEB_AUTH_ENDPOINT = "https://zingypay.com/auth"
+DIRECT_PAYMENT_SERVER = "https://zingypay.com/sep31"
+KYC_SERVER = "https://zingypay.com/kyc"
+QUOTE_SERVER = "https://zingypay.com/sep38"
 
+# Add support for AFRO
+[[CURRENCIES]]
+code = "AFRO"
+issuer = "GBUYO263AYAZZKZI5ZCZFCPIGC42JVCGAOIP2CBBCUP2UTCEUIPIE2VV"
+status = "live"
+is_asset_anchored = true
+anchor_asset_type = "crypto"
+display_decimals=2
+fixed_number=900000000000
+desc = "Afro is the ‘One Africa’ Digital Currency designed to facilitate glocal trade among Africa’s economies to forestall over dependence on the USD, Euro, Etc.; while also showcasing and promoting the afro culture which is the bedrock of all extant humanity."
+image="https://res.cloudinary.com/dp7civtid/image/upload/v1692079822/AFRO_TOKEN_ndqlai.png"
 
 # Add support for CNB
 [[CURRENCIES]]
@@ -26,21 +37,56 @@ image="https://res.cloudinary.com/dp7civtid/image/upload/v1695474886/CNB_bvlwjy.
 
 
 
+# Add support for LIFE
+[[CURRENCIES]]
+code = "LIFE"
+issuer = "GBUYO263AYAZZKZI5ZCZFCPIGC42JVCGAOIP2CBBCUP2UTCEUIPIE2VV"
+status = "live"
+display_decimals=7
+is_asset_anchored = true
+anchor_asset_type = "crypto"
+fixed_number=100000000000
+desc = "Life is El-Fort's glocally facing currency to facilitate glocal trade amongst individuals, businesses, organizations, and governments for fast, seamless, and cheap transactions. It is created to enhance lives on the planet."
+image="https://res.cloudinary.com/dp7civtid/image/upload/v1690689235/life_y29ju9.png"
 
-DESIRED_BASE_FEE=1000
+# Add support for NATURE
+[[CURRENCIES]]
+code = "NATURE"
+issuer = "GBUYO263AYAZZKZI5ZCZFCPIGC42JVCGAOIP2CBBCUP2UTCEUIPIE2VV"
+status = "live"
+is_asset_anchored = true
+anchor_asset_type = "crypto"
+display_decimals=7
+fixed_number=10000000000
+desc = "NATURE is El-Fort's asset created to cater to the environment, and nature's reengineering and conservation. 'Replenish the earth' is the mantra. More info in the White Paper."
+image="https://res.cloudinary.com/dp7civtid/image/upload/v1690650612/nature_pzqdla.png"
+
+# Add support for OSOMBA
+[[CURRENCIES]]
+code = "OSO"
+issuer = "GAEESZVR52HUAHPOJZYWMWS7TYLSPS46IAK3ZDT7HTFBULDVOYUNEWCC"
+status = "live"
+is_asset_anchored = true
+anchor_asset_type = "crypto"
+display_decimals=7
+fixed_number=900000000000
+desc = "OSO is El-Fort's asset created to cater to the Zingypay ecosystem, and the Osomba Smartchain. Users can readily buy OSO tokens and exchange them 1on1 with AFRO. More info in the White Paper."
+image="https://res.cloudinary.com/dp7civtid/image/upload/v1695206993/oso_nwnm4h.png"
+
+
 
 [DOCUMENTATION]
-ORG_URL="https://zingytrader.zingypay.com"
-ORG_DBA="ZINGYPAY"
-ORG_NAME="ZINGYPAY.COM, LLC"
+ORG_NAME = "El-Fort Global Services Ltd."
+ORG_URL = "https://zingypay.com"
+ORG_LOGO="https://res.cloudinary.com/dp7civtid/image/upload/v1690775741/zingypay-logo.png"
+ORG_DESCRIPTION = "A glocal payment platform built to facilitate instant glocal transactions with a throughput of 50,000 transactions per second utilizing the Telepay Protocol for fiat, and the decentralize Stellar Blockchain for fiat/crypto on/off-ramp transactions."
+ORG_TWITTER="@zingypay"
 ORG_OFFICIAL_EMAIL="info@zingypay.com"
-ORG_TWITTER="zingypay"
-ORG_GITHUB="zingypay"
-ORG_LOGO="https://res.cloudinary.com/dp7civtid/image/upload/v1695206970/Zingy-Trader_wexy3k.png"
-ORG_DESCRIPTION="Advanced web based trading client for the Stellar network."
+ORG_SUPPORT_EMAIL="support@zingypay.com"
 
 [[PRINCIPALS]]
 name="Ebarim Godsend"
 email="ebarim@zingypay.com"
 twitter="@edenlife247"
 keybase="aniquel"
+
