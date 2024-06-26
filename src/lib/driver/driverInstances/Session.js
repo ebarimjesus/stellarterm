@@ -246,7 +246,7 @@ export default function Send(driver) {
                     throw new Error(
                         'Could not access your Ledger account. ' +
                             'Make sure your Ledger is not locked after idle timeout or update the firmware version. ' +
-                            'Contact the support at support@stellarterm.com if the issue persists.',
+                            'Contact the support at support@zingypay.com if the issue persists.',
                     );
                 }
 
@@ -564,13 +564,13 @@ export default function Send(driver) {
             if (this.account.signers.length > 1) {
                 await this.account.refresh();
             }
-            const homeDomainExists = this.account.home_domain === 'stellarterm.com';
+            const homeDomainExists = this.account.home_domain === 'zingypay.com';
             if (homeDomainExists) {
                 return;
             }
 
             const homeDomain = {
-                homeDomain: 'stellarterm.com',
+                homeDomain: 'zingypay.com',
             };
 
             try {

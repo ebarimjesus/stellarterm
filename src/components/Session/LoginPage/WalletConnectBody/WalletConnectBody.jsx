@@ -61,7 +61,7 @@ const WalletConnectBody = ({ history, d, modal }) => {
                         <div className="LoginPage__header-wrap">
                             <span className="LoginPage__title">Access your account</span>
                             <span className="LoginPage__intro">
-                                Use StellarTerm with WalletConnect-compatible app
+                                Use ZingyTrader with WalletConnect-compatible app
                             </span>
                         </div>
                         <div className="WalletConnect_logo">
@@ -86,7 +86,7 @@ const WalletConnectBody = ({ history, d, modal }) => {
                     </div>
                     <a
                         className="LoginPage_green-link"
-                        href="https://stellarterm.freshdesk.com/support/solutions/articles/151000012438-walletconnect-how-do-i-log-in-to-stellarterm-with-my-wallet-app"
+                        href="https://stellarterm.freshdesk.com/support/solutions/articles/151000012438-walletconnect-how-do-i-log-in-to-ZingyTrader-with-my-wallet-app"
                         target="_blank"
                         rel="nofollow noopener noreferrer"
                     >

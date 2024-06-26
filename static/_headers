@@ -1,8 +1,13 @@
 # A path:
+# Set headers for the /.well-known/stellar.toml path
 /.well-known/stellar.toml
-   # Headers for that file:
-   Access-Control-Allow-Origin: *
+  Access-Control-Allow-Origin: *
+  Content-Type: text/plain
+
+# Set headers for all pages
 /*
-   # for all pages
-   X-Frame-Options: DENY
-   X-XSS-Protection: 1; mode=block
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+
+
+

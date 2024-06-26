@@ -32,8 +32,8 @@ export default class Sep24ModalContent extends React.Component {
             transaction: this.props.transaction,
             windowClosed: false,
             requestParams: {
-                wallet_name: 'StellarTerm',
-                wallet_url: 'https://stellarterm.com',
+                wallet_name: 'ZingyTrader',
+                wallet_url: 'https://zingytrader.zingypay.com',
                 asset_code: this.props.asset.code,
                 account: this.props.d.session.account.accountId(),
             },

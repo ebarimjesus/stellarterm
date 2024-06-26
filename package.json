@@ -48,6 +48,9 @@
     "react-virtualized": "^9.21.1",
     "screenfull": "^4.2.1",
     "stellar-identicon-js": "^1.0.0",
+
+    "@stellar/stellar-sdk": "^11.1.0",
+
     "stellarterm-api": "git+https://github.com/stellarterm/stellarterm-api.git",
     "stellarterm-directory": "git+https://github.com/stellarterm/stellarterm-directory.git",
     "whatwg-fetch": "2.0.4",

@@ -74,16 +74,17 @@ class Header extends React.Component {
                 <div className="so-chunk">
                     <div className="Network_bar">
                         <span>
-                            Horizon url: <strong>{currentServerUrl}</strong>
+                            
                         </span>
                         <span>
-                            Network passphrase: <strong>{networkPassphrase}</strong>
+                            
                         </span>
                     </div>
                 </div>
             </div>
         ) : null;
     }
+
 
     getAccountBlock() {
         const { state, account, userFederation, unfundedAccountId } = this.props.d.session;
@@ -107,7 +108,7 @@ class Header extends React.Component {
         if (state === SESSION_STATE.LOADING) {
             return null;
         }
-        const fullFederation = `${userFederation}*stellarterm.com`;
+        const fullFederation = `${userFederation}*zingypay.com`;
         const accountId = (account && account.account_id) || unfundedAccountId;
         const viewPublicKey = `${accountId.substr(0, 5)}...${accountId.substr(-5, 5)}`;
         const canvas = createStellarIdenticon(accountId);
@@ -190,7 +191,7 @@ class Header extends React.Component {
                     <div className="so-chunk Header">
                         <nav className="Header_nav">
                             <Link className="Nav_logo" to={'/'}>
-                                StellarTerm
+                                ZingyTrader
                             </Link>
                             {this.createHeaderTab('/markets/', 'Markets')}
                             {this.createHeaderTab('/exchange/', 'Exchange')}
@@ -206,6 +207,8 @@ class Header extends React.Component {
         );
     }
 }
+
+
 
 Header.propTypes = {
     d: PropTypes.instanceOf(Driver).isRequired,

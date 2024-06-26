@@ -17,7 +17,7 @@ export default function TermsOfUse(props) {
                 <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                     Stellar network
                 </a>
-                . StellarTerm is not responsible for your investment losses.
+                . ZingyTraderis not responsible for your investment losses.
                 <br />
                 <br />
                 Cryptocurrency assets and the Stellar {'"decentralized exchange"'} are <strong>unregulated</strong> and
@@ -32,24 +32,24 @@ export default function TermsOfUse(props) {
                 that may be of interest to you.
             </p>
 
-            <h3>2. The Stellar network (separate from StellarTerm)</h3>
+            <h3>2. The Stellar network (separate from ZingyTrader)</h3>
             <p className="termsOfUse__Paragraph">
-                StellarTerm is <strong>not an exchange</strong>. StellarTerm is <strong>only a user interface </strong>
+                ZingyTrader is <strong>not an exchange</strong>. ZingyTrader is <strong>only a user interface </strong>
                 to Stellar and does not operate the{' '}
                 <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                     Stellar network
                 </a>
-                . StellarTerm is unable to control the actions of others on the{' '}
+                . ZingyTrader is unable to control the actions of others on the{' '}
                 <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                     {' '}
                     Stellar network
                 </a>
-                . When using StellarTerm, you are directly communicating with the Horizon Stellar API operated by
+                . When using ZingyTrader, you are directly communicating with the Horizon Stellar API operated by
                 Stellar Development Foundation. Transactions on the{' '}
                 <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                     Stellar network
                 </a>{' '}
-                are <strong>irreversible</strong>. StellarTerm is not a custodian of your assets. We do not store any
+                are <strong>irreversible</strong>. ZingyTrader is not a custodian of your assets. We do not store any
                 tokens, cryptoassets or private keys on your behalf.
             </p>
 
@@ -59,15 +59,15 @@ export default function TermsOfUse(props) {
                 information.
             </p>
 
-            <h3>4. StellarTerm does not endorse anything</h3>
+            <h3>4. ZingyTrader does not endorse anything</h3>
             <p className="termsOfUse__Paragraph">
-                StellarTerm <strong>does NOT endorse ANY</strong> asset on the{' '}
+                ZingyTrader <strong>does NOT endorse ANY</strong> asset on the{' '}
                 <a href="https://www.stellar.org/" target="_blank" rel="nofollow noopener noreferrer">
                     Stellar network
                 </a>
-                . Asset {'"listings"'} on StellarTerm are NOT endorsements. StellarTerm is a software client ONLY and
+                . Asset {'"listings"'} on ZingyTrader are NOT endorsements. ZingyTrader is a software client ONLY and
                 does NOT conduct any independent diligence or review of any asset. Stellar is an open system meaning
-                that scams and market manipulators may exist. Prices shown on StellarTerm are for informational purposes
+                that scams and market manipulators may exist. Prices shown on ZingyTrader are for informational purposes
                 and do not imply that they can actually be redeemed for a certain price.
             </p>
 
@@ -80,7 +80,7 @@ export default function TermsOfUse(props) {
 
             <h3>6. Disclaimer of warranty</h3>
             <p className="termsOfUse__Paragraph">
-                StellarTerm is open source software licensed under the{' '}
+                ZingyTraderis open source software licensed under the{' '}
                 <a
                     href="https://www.apache.org/licenses/LICENSE-2.0"
                     target="_blank"
