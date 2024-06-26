@@ -1,12 +1,14 @@
 import _ from 'lodash';
-import * as StellarSdk from 'stellar-sdk';
+import * as StellarSdk from '@stellar/stellar-sdk';
 import TransportWebUSB from '@ledgerhq/hw-transport-webusb';
 import AppStellar from '@ledgerhq/hw-app-str';
-import TrezorConnect from 'trezor-connect';
+import TrezorConnect from '@trezor/connect-web';
 import { getPublicKey } from '@stellar/freighter-api';
+import { getPublicKey as getPublicKeyFromLobstr } from '@lobstrco/signer-extension-api';
 import FastAverageColor from 'fast-average-color';
 import isElectron from 'is-electron';
 import directory from 'stellarterm-directory';
+import BigNumber from 'bignumber.js';
 import MagicSpoon from '../../helpers/MagicSpoon';
 import Event from '../../helpers/Event';
 import * as request from '../../api/request';
@@ -40,9 +42,18 @@ import { MULTISIG_PROVIDERS } from '../../constants/multisigConstants';
 const fee = '100000';
 export const CACHED_ASSETS_ALIAS = 'cached_asset_data';
 export const UPDATE_CACHED_ASSETS_TIMESTAMP = 'update_cached_asset_data_timestamp';
-export const getAssetString = asset => `${asset.code}:${asset.issuer}`;
+export const getAssetString = asset => ((asset.isNative && asset.isNative()) ? 'native' : `${asset.code}:${asset.issuer}`);
+
 
 const JWT_TOKENS_CACHE = new Map();
+
+const processPathAsset = ({ asset_type: type, asset_code: code, asset_issuer: issuer }) => {
+    if (type === 'native') {
+        return StellarSdk.Asset.native();
+    }
+
+    return new StellarSdk.Asset(code, issuer);
+};
 
 export default function Send(driver) {
     this.event = new Event();
@@ -198,6 +209,17 @@ export default function Send(driver) {
                 const keypair = StellarSdk.Keypair.fromPublicKey(publicKey);
                 return this.handlers.logIn(keypair, {
                     authType: AUTH_TYPE.FREIGHTER,
+                });
+            } catch (e) {
+                throw e;
+            }
+        },
+        logInWithLobstrExtension: async () => {
+            try {
+                const publicKey = await getPublicKeyFromLobstr();
+                const keypair = StellarSdk.Keypair.fromPublicKey(publicKey);
+                return this.handlers.logIn(keypair, {
+                    authType: AUTH_TYPE.LOBSTR_SIGNER_EXTENSION,
                 });
             } catch (e) {
                 throw e;
@@ -367,6 +389,12 @@ export default function Send(driver) {
                     status: TX_STATUS.FINISH,
                     signedTx,
                 };
+            } else if (this.authType === AUTH_TYPE.LOBSTR_SIGNER_EXTENSION) {
+                const signedTx = await this.account.signWithLobstrExtension(tx);
+                return {
+                    status: TX_STATUS.FINISH,
+                    signedTx,
+                };
             }
             return driver.modal.handlers.activate('sign', tx).then(async modalResult => {
                 if (modalResult.status === TX_STATUS.FINISH) {
@@ -384,7 +412,7 @@ export default function Send(driver) {
                 return modalResult;
             });
         },
-        buildSignSubmit: async (ops, memo, withMuxing) => {
+        buildSignSubmit: async (ops, memo, withMuxing, withLog) => {
             if (this.hasPendingTransaction) {
                 driver.toastService.error(
                     'Transaction in progress',
@@ -412,7 +440,14 @@ export default function Send(driver) {
             if (memo) {
                 tx.addMemo(Stellarify.memo(memo.type, memo.content));
             }
-            return this.handlers.signSubmit(tx.build());
+
+            const builtTx = tx.build();
+
+            if (withLog) {
+                this.handlers.logSwap(builtTx.hash().toString('hex'));
+            }
+
+            return this.handlers.signSubmit(builtTx);
         },
         signSubmit: async transaction => {
             // Returns: bssResult which contains status and (if finish) serverResult
@@ -648,18 +683,68 @@ export default function Send(driver) {
 
             return this.handlers.buildSignSubmit(op, memo, opts.withMuxing);
         },
-        swap: opts => {
+        swap: ({ path, withTrust, destination, source, slippage, feeAddress }) => {
             const ops = [];
 
-            if (opts.withTrust) {
-                ops.push(buildOpChangeTrust({ asset: opts.destination }));
+            if (withTrust) {
+                ops.push(buildOpChangeTrust({ asset: destination }));
             }
             // eslint-disable-next-line no-param-reassign
-            opts.address = this.account.accountId();
-            const op = opts.isSend ? buildOpPathPaymentStrictSend(opts) : buildOpPathPaymentStrictReceive(opts);
-            ops.push(op);
+            const address = this.account.accountId();
 
-            return this.handlers.buildSignSubmit(ops);
+            path.extended_paths.forEach(({ destinationAmount, sourceAmount, path: swapPath }) => {
+                const processedPath = swapPath.map(item => processPathAsset(item));
+
+                const estimatedValue = new BigNumber(path.type === 'send' ? 100 - slippage : 100 + slippage)
+                    .times(new BigNumber(path.type === 'send' ? destinationAmount : sourceAmount))
+                    .div(100)
+                    .toFixed(7);
+
+                const op = path.type === 'send' ?
+                    buildOpPathPaymentStrictSend({
+                        source,
+                        destination,
+                        path: processedPath,
+                        sourceAmount: sourceAmount.toFixed(7),
+                        estimatedValue,
+                        address,
+                    }) :
+                    buildOpPathPaymentStrictReceive({
+                        source,
+                        destination,
+                        path: processedPath,
+                        destinationAmount: destinationAmount.toFixed(7),
+                        estimatedValue,
+                        address,
+                    });
+
+                ops.push(op);
+            });
+
+            if (path.fee_path) {
+                const feeOp = buildOpPathPaymentStrictSend({
+                    source,
+                    destination: new StellarSdk.Asset(
+                        path.fee_path.destination_asset_code, path.fee_path.destination_asset_issuer,
+                    ),
+                    path: path.fee_path.path.map(item => processPathAsset(item)),
+                    address: feeAddress,
+                    estimatedValue: '0.0000001',
+                    sourceAmount: path.fee_path.source_amount,
+                });
+
+                ops.push(feeOp);
+            }
+
+            return this.handlers.buildSignSubmit(ops, undefined, false, Boolean(path.fee_path));
+        },
+        logSwap: txHash => {
+            const body = JSON.stringify({
+                transaction_hash: txHash,
+                platform: 'stellarterm',
+            });
+            const headers = { 'Content-Type': 'application/json' };
+            return request.post(getEndpoint(ENDPOINTS.SWAP_LOG), { body, headers });
         },
         logout: () => {
             try {

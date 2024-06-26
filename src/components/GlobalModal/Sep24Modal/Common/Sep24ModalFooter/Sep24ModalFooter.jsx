@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as StellarSdk from 'stellar-sdk';
+import * as StellarSdk from '@stellar/stellar-sdk';
 import Driver from '../../../../../lib/driver/Driver';
 import ErrorHandler from '../../../../../lib/helpers/ErrorHandler';
 import images from '../../../../../images';
@@ -99,6 +99,7 @@ export default class Sep24ModalFooter extends React.Component {
         const transactionUrl = isInfoNeeded ? `${transaction.url}&callback=postMessage` : false;
         const isWaitingForWithdraw = !isDeposit && transaction.status === 'pending_user_transfer_start';
         const isCompleted = transaction.status === 'completed';
+        const isIncomplete = transaction.status === 'incomplete';
 
         if (isWaitingForWithdraw) {
             return (
@@ -122,7 +123,7 @@ export default class Sep24ModalFooter extends React.Component {
             <div className="Action_buttons">
                 {cancelButton}
 
-                {transactionUrl ? (
+                {(transactionUrl || (windowClosed && isIncomplete)) ? (
                     <button className="s-button" onClick={() => this.props.openAnchorWindow()}>
                         {windowClosed ? 'Retry' : 'Continue'}
                     </button>

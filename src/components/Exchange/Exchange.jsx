@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import * as StellarSdk from 'stellar-sdk';
+import * as StellarSdk from '@stellar/stellar-sdk';
 import screenfull from 'screenfull';
 import directory from 'stellarterm-directory';
 import { PriceScaleMode } from '../../../node_modules/lightweight-charts/dist/lightweight-charts.esm.production';
@@ -33,6 +33,8 @@ const LS_DEFAULT_CHART_TYPE_ALIAS = 'defaultChartType';
 export default class Exchange extends React.Component {
     constructor(props) {
         super(props);
+
+        this.props.d.orderbook.stopOrderbook();
 
         this.unsub = this.props.d.orderbook.event.sub(() => {
             this.forceUpdate();

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import _ from 'lodash';
-import TrezorConnect, { DEVICE_EVENT } from 'trezor-connect';
+import TrezorConnect, { DEVICE_EVENT, DEVICE } from '@trezor/connect-web';
 import Driver from '../../../../lib/driver/Driver';
 import SecretPhrase from '../SecretPhrase/SecretPhrase';
 import images from '../../../../images';
@@ -14,9 +14,14 @@ import TrezorSetupNotes from './TrezorSetupNotes/TrezorSetupNotes';
 export default class TrezorBody extends React.Component {
     constructor(props) {
         super(props);
-        TrezorConnect.manifest({
-            email: 'support@zingypay.com',
-            appUrl: 'https://zingypay.com',
+      
+        TrezorConnect.init({
+            lazyLoad: true, // this param will prevent iframe injection until TrezorConnect.method will be called
+            manifest: {
+                email: 'support@zingypay.com',
+                appUrl: 'https://zingypay.com',
+            },
+
         });
 
         this.state = {
@@ -27,7 +32,7 @@ export default class TrezorBody extends React.Component {
         };
 
         TrezorConnect.on(DEVICE_EVENT, event => {
-            if (event.type === 'device-disconnect') {
+            if (event.type === DEVICE.DISCONNECT) {
                 this.props.d.session.handlers.logout();
             }
         });
