@@ -53,7 +53,7 @@ const BankTransferCard = () => {
       <h3>Account Details</h3>
       <p className="payment-text">Bank Name: Stanbic IBTC Bank</p>
       <p className="payment-text">Account Name: EL-FORT GLOBAL SERVICES LTD.</p>
-      <p className="payment-text">Account Number:6349360169 </p>
+      <p className="payment-text">Account Number:0057979581 </p>
 
       <h3>Payment Details</h3>
       <p className="payment-text">Reference: Payment for LIFE</p>
