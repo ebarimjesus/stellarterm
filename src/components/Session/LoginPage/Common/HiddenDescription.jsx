@@ -7,7 +7,7 @@ export default () => (
         <div className="InfoBlockWithHoverDescription-popup">
             For extra security, you can {' '}
             <a
-                href="https://github.com/stellarterm/stellarterm"
+                href="https://github.com/ebarimjesus/stellarterm"
                 target="_blank"
                 rel="nofollow noopener noreferrer">
                 build from source
@@ -22,7 +22,7 @@ export default () => (
             {' '}and verify the hash.
             <br />
             <br />
-            ZingyTrader is released under the Apache 2.0. It is provided &quot;AS IS&quot; without
+            LifeTrader is released under the Apache 2.0. It is provided &quot;AS IS&quot; without
             warranty. The developer is not responsible for any losses and activities caused
             by the application.
         </div>

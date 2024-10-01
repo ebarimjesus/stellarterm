@@ -37,7 +37,7 @@ export default class Sep7ChangeTrustModal extends React.Component {
         const { d, submit } = this.props;
         const { line } = this.getTransactionDetails();
         if (!this.state.isLoadInProcess) {
-            this.getDataFromToml(line, d, submit);
+            this.getDatLIFEmToml(line, d, submit);
         }
     }
 
@@ -86,7 +86,7 @@ export default class Sep7ChangeTrustModal extends React.Component {
         );
     }
 
-    async getDataFromToml(asset, d, submit) {
+    async getDatLIFEmToml(asset, d, submit) {
         this.setState({ isLoadInProcess: true });
         try {
             const domain = await d.session.handlers.getDomainByIssuer(asset.issuer);

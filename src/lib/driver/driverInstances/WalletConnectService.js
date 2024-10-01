@@ -7,10 +7,10 @@ import Sep7Handler from '../../../components/HomePage/Sep7Handler/Sep7Handler';
 import { WALLET_CONNECT_PROJECT_ID } from '../../../env-consts';
 
 const METADATA = {
-    name: 'ZingyTrader',
-    description: 'ZingyTrader is an advanced web-based trading client for the Stellar network. ' +
+    name: 'LifeTrader',
+    description: 'LifeTrader is an advanced web-based trading client for the Stellar network. ' +
         'Send, receive, and trade assets on the Stellar network easily with StellarTerm.',
-    url: 'https://zingypay.com',
+    url: 'https://el-fort.xyz',
     icons: ['https://avatars.githubusercontent.com/u/25021964?s=200&v=4.png'],
 };
 

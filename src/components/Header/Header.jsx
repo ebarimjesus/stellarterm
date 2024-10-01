@@ -108,7 +108,7 @@ class Header extends React.Component {
         if (state === SESSION_STATE.LOADING) {
             return null;
         }
-        const fullFederation = `${userFederation}*zingypay.com`;
+        const fullFederation = `${userFederation}*el-fort.xyz`;
         const accountId = (account && account.account_id) || unfundedAccountId;
         const viewPublicKey = `${accountId.substr(0, 5)}...${accountId.substr(-5, 5)}`;
         const canvas = createStellarIdenticon(accountId);
@@ -191,7 +191,7 @@ class Header extends React.Component {
                     <div className="so-chunk Header">
                         <nav className="Header_nav">
                             <Link className="Nav_logo" to={'/'}>
-                                ZingyTrader
+                                LifeTrader
                             </Link>
                             {this.createHeaderTab('/markets/', 'Markets')}
                             {this.createHeaderTab('/exchange/', 'Exchange')}

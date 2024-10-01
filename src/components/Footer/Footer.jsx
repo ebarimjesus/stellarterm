@@ -32,20 +32,20 @@ class Footer extends React.Component {
                         <div className="Footer_social_links">
                             <a
                                 className="Footer_link"
-                                href="https://twitter.com/zingypay"
+                                href="https://twitter.com/El-Fort"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
                                 <img src={images['icon-twitter']} alt="twitter" />
-                                @zingypay
+                                @El-Fort
                             </a>
-                            <a href="mailto:support@zingypay.com" className="Footer_link">
+                            <a href="mailto:support@el-fort.xyz" className="Footer_link">
                                 <img src={images['icon-email']} alt="email" />
-                                support@zingypay.com
+                                support@el-fort.xyz
                             </a>
-                            <a href="mailto:partners@zingypay.com" className="Footer_link">
+                            <a href="mailto:partners@el-fort.xyz" className="Footer_link">
                                 <img src={images['icon-email']} alt="email" />
-                                partners@zingypay.com
+                                partners@el-fort.xyz
                             </a>
                         </div>
 
@@ -61,7 +61,7 @@ class Footer extends React.Component {
 
                             <a
                                 className="Footer_link"
-                                href="https://tawk.to/zingypay.com/"
+                                href="https://web.yanhub.xyz/ping/ELFORT/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                             >
@@ -75,15 +75,15 @@ class Footer extends React.Component {
                             <div className="Footer_disclaimer">
                                 Cryptocurrency assets are subject to high market risks and volatility. Past performance
                                 is not indicative of future results. Investments in blockchain assets may result in loss
-                                of part or all of your investment. ZingyTrader does NOT endorse ANY asset on the Stellar
+                                of part or all of your investment. LifeTrader does NOT endorse ANY asset on the Stellar
                                 network. Please do your own research and use caution.
                             </div>
 
                             {isExchangePage ? (
                                 <div className="Footer_disclaimer">
-                                    This product includes software developed at ZingyPay.com, Inc. ZingyPay Charts Copyright (с) {getCurrentYear()}{' '}
-                                    <a href="https://zingypay.com/" target="_blank" rel="noopener noreferrer">
-                                        ZingyPay
+                                    This product includes software developed at EL-FORT GLOBAL SERVICES LTD. El-Fort Charts Copyright (с) {getCurrentYear()}{' '}
+                                    <a href="https://web.yanhub.xyz/" target="_blank" rel="noopener noreferrer">
+                                        El-Fort
                                     </a>
                                     , Inc.
                                 </div>

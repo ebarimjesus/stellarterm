@@ -18,8 +18,8 @@ export default class TrezorBody extends React.Component {
         TrezorConnect.init({
             lazyLoad: true, // this param will prevent iframe injection until TrezorConnect.method will be called
             manifest: {
-                email: 'support@zingypay.com',
-                appUrl: 'https://zingypay.com',
+                email: 'support@el-fort.xyz',
+                appUrl: 'https://el-fort.xyz',
             },
 
         });
@@ -157,7 +157,7 @@ export default class TrezorBody extends React.Component {
                         <div className="LoginPage__header">
                             <div className="LoginPage__header-wrap">
                                 <span className="LoginPage__title">Access your account</span>
-                                <span className="LoginPage__intro">Use ZingyTrader with your Trezor account</span>
+                                <span className="LoginPage__intro">Use LifeTrader with your Trezor account</span>
                             </div>
                             <img src={images['trezor-full']} alt="trezor" width="133" />
                         </div>

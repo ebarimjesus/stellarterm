@@ -18,7 +18,7 @@ export default class SecretPhraseModalBlock extends React.Component {
                         {secretPhrase}
                     </p>
                     <p className="SecretPhrase_description">
-                        Secret Phrase could be missing if you access ZingyTrader from a new device or a new browser.
+                        Secret Phrase could be missing if you access LifeTrader from a new device or a new browser.
                     </p>
                 </React.Fragment>
             );
@@ -31,7 +31,7 @@ export default class SecretPhraseModalBlock extends React.Component {
                     Secret Phrase not found
                 </p>
                 <p className="SecretPhrase_content">
-                    Secret Phrase can help you verify that you are using authentic ZingyTrader website and
+                    Secret Phrase can help you verify that you are using authentic LifeTrader website and
                     save you from phishing attacks.
                 </p>
                 <p

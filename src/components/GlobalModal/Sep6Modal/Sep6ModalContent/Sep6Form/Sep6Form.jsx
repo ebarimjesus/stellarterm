@@ -13,7 +13,7 @@ export default class Sep6Form extends React.Component {
             assetInfo: this.props.assetInfo,
             withdrawParams: {
                 wallet_name: 'StellarTerm',
-                wallet_url: 'https://zingytrader.zingypay.com',
+                wallet_url: 'https://LifeTrader.el-fort.xyz',
                 asset_code: this.props.asset.code,
                 account: this.props.d.session.account.accountId(),
             },

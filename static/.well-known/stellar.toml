@@ -1,15 +1,13 @@
-
-
 ACCOUNTS = ["GBZAC3UPMX3QI4346PRRNE77QORHFO2V4CVDICI6DUVJJSD3QHO7RFAF", "GD72XP6N3LQFP4C27GUDV22LBYASGACAIEME64IEGKNU2HGO6RIALLRR", "GBRTM5TWRKX2DCOH6OETIA45NJJXGVP6QB7JJ754QFAO62XG2XMCDBAA", "GCLCIGPIF52BY3ASVR4QBLCZ7BHDYZRTAT75UYPSR4EXTI5KLUXHS2YG", "GAZ237H33DS6AMCZMPP76DQ3W5WGUVWWBQYLKSO26YFI5JQJOKXEJW2M"]
 SIGNING_KEY = "GA2Y2JYKYM47JU5MRUUOIBRFJ56ENFASUTENKCFSYRLYASB4XIM7XHNM"
-FEDERATION_SERVER="https://federation.zingypay.com/federation"
+FEDERATION_SERVER="https://federation.el-fort.xyz"
 NETWORK_PASSPHRASE='Public Global Stellar Network ; September 2015'
 
-TRANSFER_SERVER_SEP0024 = "https://zingypay.com/sep24"
-WEB_AUTH_ENDPOINT = "https://zingypay.com/auth"
-DIRECT_PAYMENT_SERVER = "https://zingypay.com/sep31"
-KYC_SERVER = "https://zingypay.com/kyc"
-QUOTE_SERVER = "https://zingypay.com/sep38"
+TRANSFER_SERVER_SEP0024 = "https://el-fort.xyz/sep24"
+WEB_AUTH_ENDPOINT = "https://el-fort.xyz/auth"
+DIRECT_PAYMENT_SERVER = "https://el-fort.xyz/sep31"
+KYC_SERVER = "https://el-fort.xyz/kyc"
+QUOTE_SERVER = "https://el-fort.xyz/sep38"
 
 # Add support for AFRO
 [[CURRENCIES]]
@@ -70,23 +68,23 @@ is_asset_anchored = true
 anchor_asset_type = "crypto"
 display_decimals=7
 fixed_number=900000000000
-desc = "OSO is El-Fort's asset created to cater to the Zingypay ecosystem, and the Osomba Smartchain. Users can readily buy OSO tokens and exchange them 1on1 with AFRO. More info in the White Paper."
+desc = "OSO is El-Fort's asset created to cater to the El-Fort ecosystem, and the Osomba Smartchain. Users can readily buy OSO tokens and exchange them 1on1 with AFRO. More info in the White Paper."
 image="https://res.cloudinary.com/dp7civtid/image/upload/v1695206993/oso_nwnm4h.png"
 
 
 
 [DOCUMENTATION]
-ORG_NAME = "El-Fort Global Services Ltd."
-ORG_URL = "https://zingypay.com"
-ORG_LOGO="https://res.cloudinary.com/dp7civtid/image/upload/v1690775741/zingypay-logo.png"
-ORG_DESCRIPTION = "A glocal payment platform built to facilitate instant glocal transactions with a throughput of 50,000 transactions per second utilizing the Telepay Protocol for fiat, and the decentralize Stellar Blockchain for fiat/crypto on/off-ramp transactions."
+ORG_NAME = "El-fort Global Services Ltd."
+ORG_URL = "https://el-fort.xyz"
+ORG_LOGO="https://yanhubstorage.blob.core.windows.net/media/El-fort-Logo2.png"
+ORG_DESCRIPTION = "ElPay is A glocal payment platform built to facilitate instant glocal transactions with a throughput of 50,000 transactions per second utilizing the Telepay Protocol for fiat, and the decentralize Stellar Blockchain for fiat/crypto on/off-ramp transactions."
 ORG_TWITTER="@zingypay"
-ORG_OFFICIAL_EMAIL="info@zingypay.com"
-ORG_SUPPORT_EMAIL="support@zingypay.com"
+ORG_OFFICIAL_EMAIL="info@el-fort.xyz"
+ORG_SUPPORT_EMAIL="support@el-fort.xyz"
 
 [[PRINCIPALS]]
-name="Ebarim Godsend"
-email="ebarim@zingypay.com"
+name="El-Fort Global Services"
+email="ebarim@el-fort.xyz"
 twitter="@edenlife247"
 keybase="aniquel"
 

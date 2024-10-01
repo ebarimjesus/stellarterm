@@ -331,7 +331,7 @@ const BuyCrypto = ({ d }) => {
             })
             .catch(() => {
                 setIsAmountPending(false);
-                setInitError('An unknown error occurred due to which you cannot buy the crypto from Moonpay try again in a moment, or buy AFRO from <href="https://zingypay.com/zingypay/payment-form" target="_blank" rel="noopener noreferrer"> Buy AFRO </a>');
+                setInitError('An unknown error occurred due to which you cannot buy the crypto from Moonpay try again in a moment, or buy LIFE from <href="https://el-fort.xyz/El-Fort/payment-form" target="_blank" rel="noopener noreferrer"> Buy LIFE </a>');
             });
     };
 
@@ -343,7 +343,7 @@ const BuyCrypto = ({ d }) => {
                         Buy crypto assets <br /> with VISA or Mastercard
                     </div>
                     <div className="BuyCrypto_description">
-                        ZingyTrader is a trusted place where you can easily buy AFRO and other cryptocurrencies
+                        LifeTrader is a trusted place where you can easily buy LIFE and other cryptocurrencies
                         with your credit or debit card
                     </div>
                 </div>
@@ -362,7 +362,7 @@ const BuyCrypto = ({ d }) => {
                                 <div className="error_text">
                                     {!isEnabled ?
                                         'Buying the crypto has temporarily disabled, try again in a moment' :
-                                        'An unknown error occurred due to which you cannot buy the crypto, try again in a moment, or buy AFRO from <href="https://zingypay.com/zingypay/payment-form" target="_blank" rel="noopener noreferrer"> Buy AFRO </a>'
+                                        'An unknown error occurred due to which you cannot buy the crypto, try again in a moment, or buy LIFE from <href="https://el-fort.xyz/El-Fort/payment-form" target="_blank" rel="noopener noreferrer"> Buy LIFE </a>'
                                     }
                                 </div>
                                 <button onClick={() => initMoonpay()} className="s-btn_cancel">
