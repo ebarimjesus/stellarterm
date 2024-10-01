@@ -30,7 +30,7 @@ is_asset_anchored = true
 anchor_asset_type = "crypto"
 display_decimals=7
 fixed_number=10000000
-desc = "ÇNB is Cannabis asset created to cater to the ZingyTrader's ecosystem trading hub. Users can readily buy ÇNB and exchange them 1on1000 with OSO. More info in the White Paper."
+desc = "ÇNB is Cannabis asset created to cater to the LifeTrader's ecosystem trading hub. Users can readily buy ÇNB and exchange them 1on1000 with OSO. More info in the White Paper."
 image="https://res.cloudinary.com/dp7civtid/image/upload/v1695474886/CNB_bvlwjy.png"
 
 
@@ -78,7 +78,7 @@ ORG_NAME = "El-fort Global Services Ltd."
 ORG_URL = "https://el-fort.xyz"
 ORG_LOGO="https://yanhubstorage.blob.core.windows.net/media/El-fort-Logo2.png"
 ORG_DESCRIPTION = "ElPay is A glocal payment platform built to facilitate instant glocal transactions with a throughput of 50,000 transactions per second utilizing the Telepay Protocol for fiat, and the decentralize Stellar Blockchain for fiat/crypto on/off-ramp transactions."
-ORG_TWITTER="@zingypay"
+ORG_TWITTER="@Lifepay"
 ORG_OFFICIAL_EMAIL="info@el-fort.xyz"
 ORG_SUPPORT_EMAIL="support@el-fort.xyz"
 

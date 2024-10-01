@@ -195,8 +195,8 @@ export default class HomePage extends React.Component {
                     operating the Stellar network.
                   </p>
                   <p>
-                    Zingy Trader is developed by el-fort.xyz, LLC, the same
-                    company that developed the Zingy Ai, Zingy Mart, Etc. The project is 
+                    Life Trader is developed by el-fort.xyz, LLC, the same
+                    company that developed the Life Ai, Life Mart, Etc. The project is 
                     independent of the Stellar Development Foundation.
                   </p>
                 </div>
