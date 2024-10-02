@@ -194,7 +194,7 @@ export default class Exchange extends React.Component {
             const baseBuying = StellarSdk.Asset.native();
             const counterSelling = new StellarSdk.Asset(
                 'LIFE',
-                'GBUYO263AYAZZKZI5ZCZFCPIGC42JVCGAOIP2CBBCUP2UTCEUIPIE2VV',
+                'GCOAFZ3MWYXX2JVJEVJ7KSKZKVGG5UYGNF4X5DQEKFLSBVIP7DLKLIFE',
             );
 
             this.props.d.orderbook.setOrderbook(baseBuying, counterSelling);
